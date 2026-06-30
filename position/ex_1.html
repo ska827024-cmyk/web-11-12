@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web</title>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+  
+*{
+    font-family: "Space Grotesk", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body{
+   background-color: rgb(192, 68, 89)
+}
+
+/* STICKY NAVBAR */
+.navbar{
+    position: sticky;
+    top: 0;
+
+    background-color: rgb(239, 152, 167);
+    height: 80px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 20px;
+}
+
+/* LOGO */
+.logo{
+    .logo img{
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+    background-color: crimson;
+    font-size: 24px;
+    font-weight: bold;
+
+    border: 2px solid #dfd9de;
+    padding: 6px 15px;
+    border-radius: 8px;
+
+}
+
+/* MENU */
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.menu  a{
+    color: #fdfafa;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu li a:hover{
+    color: #4da3ff;
+}
+
+/* BUTTONS */
+.right{
+    display: flex;
+    gap: 10px;
+}
+
+.button1{
+    background: #c95274;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.button2{
+    background: transparent;
+    color: #faf7f7;
+    border: 1px solid #7a4141;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
+/* just for scroll test */
+.content{
+    width: 100vw;
+    height: 100vh;
+    /* height: 1500px; */
+    padding: 20px; 
+}
+
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        <img src="imgaes" alt="">
+    
+    </div>
+
+    <ul class="menu">
+        <a href="">ទំព័រដើម</a>
+        <a href="">អំពីយើង</a>
+        <a href="">ទំនាក់ទំនង</a>
+        <a href="">ប្លុក</a>
+    </ul>
+
+    <div class="right">
+        <button class="button1">ចុះឈ្មោះ</button>
+        <button class="button2">ចូលប្រើ</button>
+    </div>
+</nav>
+
+<div class="content">
+    <h2>Welcome to my clsss 🏫</h2>
+    <button>Join Group</button>
+</div>
+
+
+</body>
+</html>

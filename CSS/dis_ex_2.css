@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   background-color: antiquewhite;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+h1{
+    margin-bottom: 20px;
+    color: red;
+}
+.header{
+    background-color: rgb(190, 212, 110);
+    padding: 30px;
+    font-size: 30px;
+}
+.content{
+    display: flex;
+}
+.sidebar{
+    width:160px ;
+    /* height: 150px; */
+    background-color: rgb(157, 108, 202);
+    padding: 100px 20px;
+    font-size: 30px;
+}
+.center{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    background-color: rgb(212, 116, 209);
+    padding: 100px 20px;
+    font-size: 30px;
+}
+.footer{
+    background-color: rgb(151, 67, 85);
+    padding: 30px;
+    font-size: 30px;
+}
+.ads{
+    width: 180px;
+    background-color: rgb(111, 209, 209);
+    padding: 100px 20px;
+    font-size: 30px;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+    * {
+        font-family: "Kantumruy Pro", sans-serif;
+    }
+</style>
+
+<body>
+    <div class="container mt-5">
+        <div class="d-flex justify-content-between fw-bold">
+            <h1>LIST STUDENT</h1>
+            <button class="btn btn-success fs-5" data-bs-toggle="modal" data-bs-target="#plzClick"> + Add student</button>
+        </div>
+        <div class="container mt-3 p-0">
+            <table class="table table-bordered align-middle text-center">
+                <thead>
+                    <tr>
+                        <th>ID#</th>
+                        <th>NAME</th>
+                        <th>GENDER</th>
+                        <th>CLASS</th>
+                        <th>SUBJECT</th>
+                        <th>PROFILE</th>
+                        <th>ACTION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>Nich Zin </td>
+                        <td>Female</td>
+                        <td>Web Fronted</td>
+                        <td>HTML,JS,REACT.JS</td>
+                        <td><img width="80" height="80" src="https://i.pinimg.com/736x/53/4a/dd/534add4959b3b68e2c56e73484e99465.jpg" alt=""></td>
+                        <td>
+                            <button class="btn text-light btn-info">Edit</button>
+                            <button class="btn btn-danger">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>Vich Zin</td>
+                        <td>Female</td>
+                        <td>Web Backend</td>
+                        <td>PHP,Python</td>
+                        <td><img width="80" height="80" style="border-radius: 50%;" src="https://i.pinimg.com/1200x/88/e6/fc/88e6fcc36f1d145533d512267d24057c.jpg" alt=""></td>
+                        <td>
+                            <button class="btn text-light btn-info">Edit</button>
+                            <button class="btn btn-danger">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td>Vi Zin</td>
+                        <td>Female</td>
+                        <td>Web Backend</td>
+                        <td>PHP,Python</td>
+                        <td><img width="80" height="80" style="border-radius: 50%;" src="https://i.pinimg.com/1200x/c4/ac/92/c4ac92ef9b26a467aa50de81517ee64f.jpg" alt=""></td>
+                        <td>
+                            <button class="btn text-light btn-info">Edit</button>
+                            <button class="btn btn-danger">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>04</td>
+                        <td>Da Zin</td>
+                        <td>Female</td>
+                        <td>Digital</td>
+                        <td>PHP,Python</td>
+                        <td><img width="80" height="80" style="border-radius: 50%;" src="https://i.pinimg.com/1200x/9f/6b/0a/9f6b0ae86effaaf14b0c80cefb7ce061.jpg" alt=""></td>
+                        <td>
+                            <button class="btn text-light btn-info">Edit</button>
+                            <button class="btn btn-danger">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="plzClick" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Infromation Student 🧑‍🎓</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#">
+                            <div class="form-group mb-3">
+                                <input type="text" class="form-control" placeholder="Full name">
+                            </div>
+                            <div class="form-group mb-3">
+                                <select  class="form-control">
+                                    <option value="" disabled selected>Select Genderoption>
+                                    <option value="">Male</option>
+                                    <option value="">Female</option>
+                                </select>
+                            </div>
+                            <div class="form-group mb-3">
+                                <select  class="form-control">
+                                    <option value="" disabled selected>Your Class</option>
+                                    <option value="">Teacher& Data Entry& Bank Staff</option>
+                                    <option value="">Teacher&Content Write</option>
+                                    <option value="">Teacher& Customer Service& Tourism Guide</option>
+                                    <option value="">Teacher& Reserch Assitant& Tuor Guide</option>
+                                </select>
+                            </div>
+                            <div class="form-group mb-3">
+                                <input type="checkbox"> Mathematic
+                                <input type="checkbox"> Khmer
+                                <input type="checkbox"> English
+                                <input type="checkbox"> History
+                            </div>
+                            <div class="form-group mb-3">
+                                <img src="https://i.pinimg.com/1200x/2d/f5/7f/2df57f77b47cdc3ec5bf952d78e07a44.jpg" style="width: 150px; height: 150px; border-radius: 50%;" alt="">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" >Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../bootstrap/js/bootstrap.js"></script>
+</html>
+

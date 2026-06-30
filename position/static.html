@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static</title>
+</head>
+<style>
+    .static{
+        width: 100vw;
+        height: 50vh;
+        background-color: rgb(63, 232, 232);
+        position: static;
+        left: 100vh;
+
+    }
+    .reletive{
+        width: 100vw;
+        height: 50vh;
+        background-color: aquamarine;
+    }
+    .parent{
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(90, 184, 221);
+        position: relative;
+        & .child{
+            width:50vh ;
+            height: 50vh;
+            background-color: rgb(44, 103, 118);
+            position: absolute;
+            top: 10px;
+            /* left: 0%; */
+            right: 40%;
+        }
+    }
+    .sticky{
+        width: 50vw;
+        height: 50vh;
+        background-color: rgb(26, 236, 166);
+    }
+
+</style>
+
+<body>
+    <div class="static">
+        Hello world  🌎
+    </div>
+    <div class="reletive"></div>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+    <div class="sticky" >sticky</div>
+    
+</body>
+</html>

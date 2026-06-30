@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    background-image: url('https://wallpapers-clan.com/wp-content/uploads/2025/01/pokemon-ash-ketchum-charizard-bond-desktop-wallpaper-cover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 30vh;
+    background-attachment: fixed;
+}
+.content-section{
+    width: 90%;
+    max-width: 550px;
+    height: 50%;
+    background-color: rgba(69, 84, 92, 0.636);
+    margin: 0 auto; 
+    text-align: center;
+    border-radius: 10px;
+}
+.content-section h1{
+    color: white;
+    font-weight: bold;
+    padding: 20px 0px 5px 0px;
+    font-size: 35px;
+
+}
+.content-section p{
+    color: aliceblue;
+    font-size:25px ;
+
+}
+.content-section button{
+    padding: 40px;
+    border: none;
+    border-radius:​20px;
+    margin-top: 30px;
+    color: black;
+    font-weight:bold ;
+    font-size: 25px;
+    background-color: rgba(151, 150, 49, 0.799);
+}
+
+.hero-content {
+    width:100vw ;
+    height: 100vh;
+}
