@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy now</title>
+
+    <style>
+        body {
+            background-color: #0f0f10;
+            color: #ffffff;
+            font-family: 'Khmer OS Battambang', sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .main-container {
+            display: flex;
+            background: #1a1a1c;
+            border: 1px solid #2d2d30;
+            border-radius: 16px;
+            max-width: 900px;
+            width: 100%;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+            overflow: hidden;
+        }
+        .movie-details {
+            flex: 1;
+            padding: 30px;
+            border-right: 1px solid #2d2d30;
+        }
+        .movie-banner {
+            width: 100%;
+            height: 220px;
+            background: url('https://tse4.mm.bing.net/th/id/OIP.iFDAKNO4nvKbNtLKnhv7TAHaEo?r=0&pid=Api&h=220&P=0')
+            center/cover no-repeat;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .movie-title {
+            font-size: 26px;
+            font-weight: bold;
+            color: #ffffff;
+            margin: 0 0 10px 0;
+        }
+        .movie-meta {
+            font-size: 14px;
+            color: #e50914;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .movie-description {
+            font-size: 14px;
+            color: #aaaaaa;
+            line-height: 1.6;
+        }
+        .payment-section {
+            width: 350px;
+            padding: 30px;
+            background: #1f1f22;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .payment-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        .price-tag {
+            background: #2a2a2e;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #00ffcc;
+            margin-bottom: 20px;
+        }
+        .qr-box {
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            display: inline-block;
+            margin: 0 auto 20px auto;
+        }
+        .qr-box img {
+            width: 160px;
+            height: 160px;
+            display: block;
+        }
+        .btn-watch-now {
+            display: block;
+            background: #e50914;
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: background 0.2s;
+        }
+        .btn-watch-now:hover {
+            background: #b80710;
+        }
+        @media (max-width: 768px) {
+            .main-container {
+                flex-direction: column;
+            }
+            .movie-details {
+                border-right: none;
+                border-bottom: 1px solid #2d2d30;
+            }
+            .payment-section {
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <!-- information of rg  -->
+        <div class="movie-details">
+            <div class="movie-banner"></div>
+            <h1 class="movie-title">Avatar: The Way of Water (វគ្គ ២)</h1>
+            <div class="movie-meta">ឆ្នាំចេញផ្សាយ៖ 2026 • រយៈពេល៖ 2 ម៉ោង 30 នាទី • ប្រភេទ៖ Sci-fi / Action</div>
+            <p class="movie-description">
+                <strong>សង្ខេបសាច់រឿង៖</strong>
+                កន្លងហួសទៅជាងដប់ឆ្នាំបន្ទាប់ពីព្រឹត្តិការណ៍នៃវគ្គដំបូង,
+                រឿងរ៉ាវចាប់ផ្តើមនិយាយពីគ្រួសាររបស់ Jake Sully និង Neytiri
+                រួមទាំងបញ្ហាប្រឈមដែលតាមលងបន្លាចពួកគេ,
+                ការតស៊ូព្យាយាមដើម្បីរក្សាការពារគ្នាទៅវិញទៅមកឱ្យមានសុវត្ថិភាព
+                និងការប្រយុទ្ធដើម្បីរស់នៅលើភព Pandora ដ៏ស្រស់ស្អាត។
+            </p>
+        </div>
+        <!-- kleng bong luy  -->
+        <div class="payment-section">
+            <div>
+                <div class="payment-title">
+                    ទូទាត់ប្រាក់ដើម្បីទស្សនា
+                </div>
+                <div class="price-tag">
+                    តម្លៃសំបុត្រ៖ $2.50$
+                </div>
+                <!-- QR Code -->
+                <div class="qr-box">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.4DXAA5ff98rivRMyWm9UngHaHa?r=0&pid=Api&h=220&P=0" alt="KHQR Code">
+                </div>
+                <p style="font-size:13px; color:#aaa; margin-bottom:20px;">
+                    👉 សូមបើក App ធនាគាររបស់អ្នកដើម្បីស្កេន KHQR
+                    បន្ទាប់មកចុចប៊ូតុងខាងក្រោម។
+                </p>
+            </div>
+            <a href="watch-movie.html" class="btn-watch-now">ខ្ញុំបានបង់លុយរួចរាល់ ▶️</a>
+        </div>
+    </div>
+</body>
+</html

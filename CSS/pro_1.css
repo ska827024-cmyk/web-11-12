@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ❗ FIX: remove fixed height (this caused footer issue) */
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(205, 196, 196);
+    font-family: "Rubik", sans-serif;
+}
+
+/* ❗ FIX: push footer down */
+body main{
+    flex: 1;
+}
+
+/* (your header kept) */
+body header{
+    display: flex;
+    width: 100%;
+    height: 6%;
+    background-color: rgb(214, 210, 210);
+}
+
+/* FOOTER FIX ONLY */
+.footer{
+    width:100%;
+    background:#1c1c1c;
+    color:white;
+    margin-top:auto;
+}
+
+/* ❗ FIX: match HTML class */
+.footer-content{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    padding:40px 0;
+    gap:30px;
+}
+
+.footer-box{
+    width:25%;
+}
+
+/* SOCIAL FIX */
+.social{
+    display:flex;
+    gap:15px;
+}
+
+.social i{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:white;
+    color:#1c1c1c;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.social i:hover{
+    background:#20e320;
+    color:white;
+    transform:translateY(-5px);
+}
+
+/* COPYRIGHT */
+.copyright{
+    text-align:center;
+    padding:20px;
+    border-top:1px solid #444;
+    color:#bdbdbd;
+}body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(205, 196, 196);
+    font-family: "Rubik", sans-serif;
+}
+
+/* MAIN MUST grow */
+main{
+    flex: 1;
+    height: auto;
+}
+
+/* REMOVE fixed height in article */
+main article{
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* FOOTER FIX */
+.footer{
+    width: 100%;
+    background: #1c1c1c;
+    color: white;
+    margin-top: auto;
+}

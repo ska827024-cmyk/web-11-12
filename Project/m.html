@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamVerse - All Movies</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- Custom Style -->
+    <style>
+        :root {
+            --bg-dark: #0f0c1b;
+            --bg-card: #1d1833;
+            --primary-purple: #8257e5;
+            --text-light: #f3f1f6;
+        }
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .navbar {
+            background-color: rgba(15, 12, 27, 0.95);
+            backdrop-filter: blur(5px);
+        }
+        .nav-link.active, .nav-link:hover {
+            color: var(--primary-purple) !important;
+        }
+        .movie-card {
+            background-color: var(--bg-card);
+            border: none;
+            transition: transform 0.3s ease;
+        }
+        .movie-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(130, 87, 229, 0.3);
+        }
+        .btn-purple {
+            background-color: var(--primary-purple);
+            color: white;
+        }
+        .btn-purple:hover {
+            background-color: #6f42c1;
+            color: white;
+        }
+        .page-link {
+            background-color: var(--bg-card);
+            color: var(--text-light);
+            border-color: #251f3e;
+        }
+        .page-link:hover {
+            background-color: var(--primary-purple);
+            color: white;
+        }
+        .page-item.active .page-link {
+            background-color: var(--primary-purple);
+            border-color: var(--primary-purple);
+        }
+        footer {
+            background-color: #080610;
+            border-top: 1px solid #251f3e;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-uppercase" href="index.html" style="color: var(--primary-purple); letter-spacing: 1px;">
+                <i class="fa-solid fa-play-cycle me-2"></i>StreamVerse
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="movies.html">Movies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 bg-dark text-light border-secondary" type="search" placeholder="Search movies...">
+                    <button class="btn btn-outline-purple" type="submit" style="color: var(--primary-purple); border-color: var(--primary-purple);">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content Header & Filter -->
+    <main class="container my-5">
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <h2 class="fw-bold mb-3 mb-md-0"><span style="border-left: 4px solid var(--primary-purple); padding-left: 10px;">Explore Movies</span></h2>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <!-- Filter Buttons -->
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-purple btn-sm">All</button>
+                    <button type="button" class="btn btn-outline-secondary btn-sm text-light">Action</button>
+                    <button type="button" class="btn btn-outline-secondary btn-sm text-light">Sci-Fi</button>
+                    <button type="button" class="btn btn-outline-secondary btn-sm text-light">Comedy</button>
+                    <button type="button" class="btn btn-outline-secondary btn-sm text-light">Horror</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Movies Grid -->
+        <div class="row g-4">
+            <!-- Movie 1 -->
+            <div class="col-6 col-md-3">
+                <div class="card movie-card h-100 text-light">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.yMhGoDIzOoXySTubMPDYwgHaEK?r=0&pid=Api&h=220&P=0." class="card-img-top" alt="Movie poster">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title text-truncate fs-6">Shadow Knights</h5>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <span class="text-warning small"><i class="fa-solid fa-star me-1"></i>8.5</span>
+                            <a href="detail.html" class="btn btn-purple btn-sm">Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie 2 -->
+            <div class="col-6 col-md-3">
+                <div class="card movie-card h-100 text-light">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.MSaqmLgEnXiIRqtJ4SVWFwHaEK?r=0&pid=Api&h=220&P=0" class="card-img-top" alt="Movie poster">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title text-truncate fs-6">The Last Director</h5>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <span class="text-warning small"><i class="fa-solid fa-star me-1"></i>7.9</span>
+                            <a href="detail.html" class="btn btn-purple btn-sm">Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie 3 -->
+            <div class="col-6 col-md-3">
+                <div class="card movie-card h-100 text-light">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.JpLrvJPZW3UvR9S5BtSNjgHaEK?r=0&pid=Api&h=220&P=0" class="card-img-top" alt="Movie poster">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title text-truncate fs-6">Cyber Neon 2077</h5>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <span class="text-warning small"><i class="fa-solid fa-star me-1"></i>9.1</span>
+                            <a href="detail.html" class="btn btn-purple btn-sm">Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie 4 -->
+            <div class="col-6 col-md-3">
+                <div class="card movie-card h-100 text-light">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.d8UeZlCK_dHXY_P_ax6vRQHaEK?r=0&pid=Api&h=220&P=0" class="card-img-top" alt="Movie poster">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title text-truncate fs-6">Lost In Time</h5>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <span class="text-warning small"><i class="fa-solid fa-star me-1"></i>8.2</span>
+                            <a href="detail.html" class="btn btn-purple btn-sm">Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie 5 -->
+            <div class="col-6 col-md-3">
+                <div class="card movie-card h-100 text-light">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.6sOeKHoVlYj1cIGeJvZNHwHaEJ?r=0&pid=Api&h=220&P=0" class="card-img-top" alt="Movie poster">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title text-truncate fs-6">The Abstract Mind</h5>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <span class="text-warning small"><i class="fa-solid fa-star me-1"></i>7.4</span>
+                            <a href="detail.html" class="btn btn-purple btn-sm">Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie 6 -->
+            <div class="col-6 col-md-3">
+                <div class="card movie-card h-100 text-light">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.cfoflbdAoQWNxCf86zz0zQHaDs?r=0&pid=Api&h=220&P=0" class="card-img-top" alt="Movie poster">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title text-truncate fs-6">City Lights</h5>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <span class="text-warning small"><i class="fa-solid fa-star me-1"></i>8.8</span>
+                            <a href="detail.html" class="btn btn-purple btn-sm">Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie 7 -->

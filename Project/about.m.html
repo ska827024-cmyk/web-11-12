@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamVerse - About Us</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- Custom Style -->
+    <style>
+        :root {
+            --bg-dark: #0f0c1b;
+            --bg-card: #1d1833;
+            --primary-purple: #8257e5;
+            --text-light: #f3f1f6;
+        }
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .navbar {
+            background-color: rgba(15, 12, 27, 0.95);
+            backdrop-filter: blur(5px);
+        }
+        .nav-link.active, .nav-link:hover {
+            color: var(--primary-purple) !important;
+        }
+        .about-card {
+            background-color: var(--bg-card);
+            border: none;
+            border-radius: 12px;
+        }
+        .team-img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid var(--primary-purple);
+        }
+        .icon-box {
+            font-size: 2.5rem;
+            color: var(--primary-purple);
+        }
+        footer {
+            background-color: #080610;
+            border-top: 1px solid #251f3e;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-uppercase" href="index.html" style="color: var(--primary-purple); letter-spacing: 1px;">
+                <i class="fa-solid fa-play-cycle me-2"></i>StreamVerse
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="movies.html">Movies</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 bg-dark text-light border-secondary" type="search" placeholder="Search movies...">
+                    <button class="btn btn-outline-purple" type="submit" style="color: var(--primary-purple); border-color: var(--primary-purple);">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- Section: Story -->
+        <section class="row align-items-center g-5 py-4 mb-5">
+            <div class="col-lg-6">
+                <h2 class="fw-bold mb-4"><span style="border-left: 4px solid var(--primary-purple); padding-left: 10px;">Our Story</span></h2>
+                <p class="lead" style="color: #b3afc6;">Welcome to StreamVerse, your ultimate destination for unlimited entertainment.</p>
+                <p class="text-secondary">Founded in 2026, we aim to provide high-quality movie streaming experiences to users worldwide. We believe that entertainment should be easily accessible, high-definition, and tailormade to everyone's preferences without interruptions.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://unsplash.com" class="img-fluid rounded-3 shadow" alt="Cinema experience">
+            </div>
+        </section>
+
+        <!-- Section: Features/Values -->
+        <section class="py-5 mb-5">
+            <h3 class="fw-bold text-center mb-5">Why Choose StreamVerse?</h3>
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="p-4 about-card h-100 shadow-sm">
+                        <div class="icon-box mb-3"><i class="fa-solid fa-bolt"></i></div>
+                        <h5 class="fw-bold mb-2">Ultra Fast Streaming</h5>
+                        <p class="text-secondary small">Enjoy buffer-free streaming in 4K Ultra HD quality anytime, anywhere with advanced server tech.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 about-card h-100 shadow-sm">
+                        <div class="icon-box mb-3"><i class="fa-solid fa-clapperboard"></i></div>
+                        <h5 class="fw-bold mb-2">Massive Library</h5>
+                        <p class="text-secondary small">Thousands of trending movies, classic blockbusters, and unique indie films updated daily.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 about-card h-100 shadow-sm">
+                        <div class="icon-box mb-3"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                        <h5 class="fw-bold mb-2">Multi-Device Support</h5>
+                        <p class="text-secondary small">Watch seamlessly on your mobile phone, tablet, computer, or smart television at ease.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Team -->
+        <section class="py-4">
+            <h3 class="fw-bold text-center mb-5">Meet Our Team</h3>
+            <div class="row g-4 text-center justify-content-center">
+                <!-- Member 1 -->
+                <div class="col-sm-6 col-md-3">
+                    <div class="p-3 bg-transparent">
+                        <img src="https://unsplash.com" class="team-img mb-3 shadow" alt="CEO">
+                        <h6 class="fw-bold mb-1">Alex Mercer</h6>
+                        <small class="text-muted">Founder & CEO</small>
+                    </div>
+                </div>
+                <!-- Member 2 -->
+                <div class="col-sm-6 col-md-3">
+                    <div class="p-3 bg-transparent">
+                        <img src="https://unsplash.com" class="team-img mb-3 shadow" alt="CTO">
+                        <h6 class="fw-bold mb-1">Jessica Alba</h6>
+                        <small class="text-muted">Lead Developer</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-4 text-muted text-center mt-auto">
+        <div class="container">
+            <p class="mb-2">&copy; 2026 StreamVerse. All rights reserved.</p>
+            <div>
+                <a href="#" class="text-muted me-3 text-decoration-none"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="text-muted me-3 text-decoration-none"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-muted me-3 text-decoration-none"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="text-muted text-decoration-none"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://jsdelivr.net"></script>
+</body>
+</html>
